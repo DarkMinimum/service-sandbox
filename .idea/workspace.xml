@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[master] initial commit">
-      <change afterPath="$PROJECT_DIR$/rest-server/src/main/java/rest/server/restserver/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-server/src/main/java/rest/server/restserver/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/src/main/java/grpc/client/grpcclient/GrpcClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/src/main/proto/service.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-client/src/test/java/grpc/client/grpcclient/GrpcClientApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/java/grpc/server/grpcserver/GrpcServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc-server/src/test/java/grpc/server/grpcserver/GrpcServerApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/graphQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/graphQL.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/graphQL.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/java/graph/server/graphql/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/java/graph/server/graphql/model/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/java/graph/server/graphql/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b971698ffc5bf40a64337294fabc12baaa3777b9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/9/b971698ffc5bf40a64337294fabc12baaa3777b9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="7549920d-efe7-4979-b182-abf7a6e8911f" name="do-not-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +28,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/graph-ql">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/grpc-client">
@@ -74,6 +74,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DarkMinimum&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="93ca2d37-a86d-4329-816e-40fb43ee9f90" />
+        <option name="url" value="https://github.com/DarkMinimum/grpc-repo" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -86,35 +100,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-20",
-    "last_opened_file_path": "C:/Users/danil/IdeaProjects/g-rpc-repo/grpc-server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danil/IdeaProjects/g-rpc-repo/graph-ql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danil\IdeaProjects\g-rpc-repo\grpc-client\src\main\proto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RestServerApplication">
+  <component name="RunManager" selected="Spring Boot.GraphQlApplication">
     <configuration name="grpc-server [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -187,6 +203,13 @@
     <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="GraphQlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="graphQL.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="graph.server.graphql.GraphQlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GrpcClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="grpc-client.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="grpc.client.grpcclient.GrpcClientApplication" />
@@ -220,6 +243,7 @@
       <item itemvalue="Gradle.grpc-server [jar]" />
       <item itemvalue="HTTP Request.generated-requests | #4" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="Spring Boot.GraphQlApplication" />
       <item itemvalue="Spring Boot.RestServerApplication" />
       <item itemvalue="Spring Boot.GrpcClientApplication" />
       <item itemvalue="Spring Boot.GrpcServerApplication" />
@@ -245,7 +269,8 @@
       <updated>1704705612660</updated>
       <workItem from="1704705613604" duration="13783000" />
       <workItem from="1704790987516" duration="1940000" />
-      <workItem from="1704792944238" duration="4265000" />
+      <workItem from="1704792944238" duration="6619000" />
+      <workItem from="1704815453366" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary="[master] initial commit">
       <option name="closed" value="true" />
@@ -255,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704723235411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[master] initial commit">
+      <option name="closed" value="true" />
+      <created>1704801482327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704801482327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
