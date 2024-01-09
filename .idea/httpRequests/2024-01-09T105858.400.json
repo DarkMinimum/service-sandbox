@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-01-09T09:58:57.930+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/sayHello/"
+}

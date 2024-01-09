@@ -1,0 +1,26 @@
+POST http://localhost:8080/sayHello/
+Content-Type: application/json
+Content-Length: 20
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "text": "jopa"
+}
+
+<> 2024-01-09T105909.200.json
+
+###
+
+POST http://localhost:8080/sayHello/
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-09T105858.400.json
+
+###
+
+GRPC localhost:6565/net.devh.boot.grpc.example.EchoService/SayHelloGRPC localhost:6565/net.devh.boot.grpc.example.EchoService/SayHello

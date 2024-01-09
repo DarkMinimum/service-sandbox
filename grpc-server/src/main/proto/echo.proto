@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+package net.devh.boot.grpc.example;
+
+option java_multiple_files = true;
+option java_package = "grpc.server";
+
+service EchoService {
+  rpc SayHello (Message) returns (Message) {
+  }
+  rpc GetHello (google.protobuf.Empty) returns (Message) {
+  }
+}
+
+message Message {
+  string param = 1;
+  int32 number = 2;
+}

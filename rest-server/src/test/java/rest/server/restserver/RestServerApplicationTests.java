@@ -1,13 +1,13 @@
-package grpc.server.grpcserver;
+package rest.server.restserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GrpcServerApplicationTests {
+class RestServerApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
