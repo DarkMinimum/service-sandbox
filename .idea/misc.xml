@@ -5,9 +5,10 @@
     <file type="web" url="file://$PROJECT_DIR$/graph-ql" />
     <file type="web" url="file://$PROJECT_DIR$/grpc-client" />
     <file type="web" url="file://$PROJECT_DIR$/grpc-server" />
+    <file type="web" url="file://$PROJECT_DIR$/order-flow" />
     <file type="web" url="file://$PROJECT_DIR$/rest-server" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-20" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
