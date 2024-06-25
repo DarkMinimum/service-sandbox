@@ -1,8 +1,8 @@
 package com.dark.model;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import java.util.List;
 
 @Entity(name = "ORDER_TABLE")
