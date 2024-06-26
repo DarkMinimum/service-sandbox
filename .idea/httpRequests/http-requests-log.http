@@ -1,3 +1,13 @@
+GET http://localhost:8084/actuator
+Accept: application/vnd.spring-boot.actuator.v3+json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-06-26T173819.200.json
+
+###
+
 POST http://localhost:8080/sayHello/
 Content-Type: application/json
 Content-Length: 20

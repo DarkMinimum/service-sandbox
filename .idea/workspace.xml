@@ -4,30 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[master] initial commit">
-      <change afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/repo/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/service/EndingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/java/com/dark/intermediate/repo/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/java/com/dark/intermediate/service/IntermediateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/model/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/service/StarterService.java" afterDir="false" />
+    <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[bp] add basic order infrastructure">
+      <change afterPath="$PROJECT_DIR$/order-flow/camunda/src/main/java/com/dark/engine/EngineApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-flow/camunda/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-flow/camunda/src/main/resources/process.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/EndingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/EndingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/controller/EndingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/controller/EndingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-intermidiate/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-intermidiate/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/java/com/dark/intermediate/IntermediateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/java/com/dark/intermediate/IntermediateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/java/com/dark/intermediate/controller/IntermediateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/java/com/dark/intermediate/controller/IntermediateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-intermidiate/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com.dark.model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/StarterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/StarterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/repo/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/repo/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/settings.gradle" afterDir="false" />
     </list>
     <list id="7549920d-efe7-4979-b182-abf7a6e8911f" name="do-not-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +65,9 @@
         <task path="$PROJECT_DIR$/order-flow/order-starter">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/order-flow/order-model">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -88,8 +80,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,7 +126,9 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "business-process",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_directory_selection": "C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -144,6 +138,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\camunda\src\main\resources" />
       <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\model\src\main\java" />
       <recent name="C:\Users\danil\IdeaProjects\g-rpc-repo\grpc-client\src\main\proto" />
     </key>
@@ -152,7 +147,7 @@
       <recent name="com.dark.starter.repo" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.IntermediateApplication">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="grpc-server [test]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,28 +160,6 @@
         <option name="taskNames">
           <list>
             <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="order-flow:order-model [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/order-flow/order-model" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="classes" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -219,9 +192,32 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="EngineApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/EngineApplication.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-engine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EndingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="order-flow.order-ending.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.ending.EndingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EngineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-flow.camunda.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dark.engine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,19 +239,6 @@
     <configuration name="GrpcServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="grpc.server.grpc-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="grpc.server.grpcserver.GrpcServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrpcServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="grpc-server.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="grpc.server.grpcserver.GrpcServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="grpc.server.grpcserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -347,8 +330,9 @@
       <item itemvalue="Docker.order-flow.db: Compose Deployment" />
       <item itemvalue="Docker.order-flow: Compose Deployment" />
       <item itemvalue="Gradle.grpc-server [test]" />
-      <item itemvalue="Gradle.order-flow:order-model [classes]" />
       <item itemvalue="Gradle.order-flow:order-starter [build]" />
+      <item itemvalue="HTTP Request.EngineApplication | #1" />
+      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.EndingApplication" />
       <item itemvalue="Spring Boot.IntermediateApplication" />
       <item itemvalue="Spring Boot.StarterApplication" />
@@ -361,15 +345,15 @@
       <item itemvalue="Spring Boot.RestServerApplication (4)" />
       <item itemvalue="Spring Boot.GrpcServerApplication (1)" />
       <item itemvalue="Spring Boot.StarterApplication (1)" />
-      <item itemvalue="Spring Boot.GrpcServerApplication" />
+      <item itemvalue="Spring Boot.EngineApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EngineApplication" />
+        <item itemvalue="HTTP Request.EngineApplication | #1" />
         <item itemvalue="Docker.order-flow.db: Compose Deployment" />
         <item itemvalue="Docker.order-flow: Compose Deployment" />
         <item itemvalue="Gradle.order-flow:order-starter [build]" />
-        <item itemvalue="Gradle.order-flow:order-model [classes]" />
-        <item itemvalue="Spring Boot.GrpcServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719320442151</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[bp] add basic order infrastructure">
+      <option name="closed" value="true" />
+      <created>1719415032025</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719415032025</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +445,8 @@
     <MESSAGE value="[bp] created templates" />
     <MESSAGE value="[bp] created templates 1" />
     <MESSAGE value="[bp] created templates 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="[bp] created templates 2" />
+    <MESSAGE value="[bp] add basic order infrastructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="[bp] add basic order infrastructure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
