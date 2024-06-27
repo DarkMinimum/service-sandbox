@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/grpc-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/grpc-server.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-starter/order-flow.order-starter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-starter/order-flow.order-starter.main.iml" />
     </modules>
   </component>
 </project>

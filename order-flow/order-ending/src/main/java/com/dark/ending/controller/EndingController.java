@@ -19,9 +19,4 @@ public class EndingController {
         return service.finishOrder(orderId);
     }
 
-    @GetMapping("/order/{orderId}")
-    public Order getFinishedOrder(@PathVariable String orderId) {
-        return service.finishOrder(orderId);
-    }
-
 }

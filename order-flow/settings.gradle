@@ -1,5 +1,5 @@
 rootProject.name = 'order-flow'
 
 include 'order-starter', 'order-intermidiate', 'order-ending', 'order-model'
-include 'camunda'
+include 'order-engine'
 

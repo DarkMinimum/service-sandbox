@@ -17,12 +17,4 @@ public class EndingService {
         order.setStatus(OrderStatus.CLOSED);
         return repository.saveAndFlush(order);
     }
-
-    public Order getFinishedOrder(String id) {
-        var order = repository.getReferenceById(id);
-        if (order.getStatus() != OrderStatus.CLOSED) {
-            throw new IllegalStateException("Order should be clsoed");
-        }
-        return repository.saveAndFlush(order);
-    }
 }
