@@ -4,6 +4,7 @@ import com.dark.engine.ProcessEnv;
 import com.dark.entity.Order;
 import com.dark.model.OrderStatus;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.ws.rs.core.Link;
 import jakarta.ws.rs.core.UriBuilder;
 import org.apache.commons.lang3.StringUtils;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
@@ -27,13 +28,9 @@ public class UpdateOrderStatusTask implements JavaDelegate {
         var processEnv = new ProcessEnv(execution);
         var orderId = processEnv.getOrderId();
 
-        URI uriWithParams = UriBuilder.fromUri(intermediateUrl)
-                .queryParam("orderId", orderId)
-                .build();
-
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(uriWithParams)
+                .uri(URI.create(intermediateUrl + orderId))
                 .POST(HttpRequest.BodyPublishers.ofString(StringUtils.EMPTY))
                 .build();
 

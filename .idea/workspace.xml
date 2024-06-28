@@ -5,38 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[bp] camunda working prototype added">
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/ProcessEnv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/CreateOrderTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/FinishOrderTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/ValidationTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/order-process.bpmn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camunda-h2-database.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/camunda/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/camunda/src/main/java/com/dark/engine/EngineApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/camunda/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/camunda/src/main/resources/process.bpmn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/controller/EndingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/controller/EndingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/service/EndingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/service/EndingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/EngineApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/process.bpmn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/target/classes/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/target/classes/com/dark/engine/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/target/classes/process.bpmn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/order-process.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/order-process.bpmn" afterDir="false" />
     </list>
     <list id="7549920d-efe7-4979-b182-abf7a6e8911f" name="do-not-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,35 +111,35 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2afNKfThebl0D6aPfsAjxBviQUv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "business-process",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_directory_selection": "C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java",
-    "last_opened_file_path": "C:/Program Files/CamundaModeler/Camunda Modeler.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;business-process&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/CamundaModeler/Camunda Modeler.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-engine" />
@@ -181,7 +155,7 @@
       <recent name="com.dark.starter.repo" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EngineApplication">
+  <component name="RunManager" selected="Spring Boot.EngineApplication (1)">
     <configuration name="grpc-server [test]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,34 +178,25 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="order-flow:order-starter [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/order-flow/order-starter" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="EngineApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/EngineApplication.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="EndingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="order-flow.order-ending.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.ending.EndingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EngineApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-flow.order-engine.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dark.engine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -364,7 +329,6 @@
       <item itemvalue="Docker.order-flow.db: Compose Deployment" />
       <item itemvalue="Docker.order-flow: Compose Deployment" />
       <item itemvalue="Gradle.grpc-server [test]" />
-      <item itemvalue="Gradle.order-flow:order-starter [build]" />
       <item itemvalue="HTTP Request.EngineApplication | #1" />
       <item itemvalue="Spring Boot.EndingApplication" />
       <item itemvalue="Spring Boot.IntermediateApplication" />
@@ -378,15 +342,16 @@
       <item itemvalue="Spring Boot.RestServerApplication (4)" />
       <item itemvalue="Spring Boot.GrpcServerApplication (1)" />
       <item itemvalue="Spring Boot.StarterApplication (1)" />
+      <item itemvalue="Spring Boot.EngineApplication (1)" />
       <item itemvalue="Spring Boot.EngineApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EngineApplication (1)" />
         <item itemvalue="Docker.order-flow: Compose Deployment" />
         <item itemvalue="Spring Boot.EngineApplication" />
         <item itemvalue="HTTP Request.EngineApplication | #1" />
         <item itemvalue="Docker.order-flow.db: Compose Deployment" />
-        <item itemvalue="Gradle.order-flow:order-starter [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -408,6 +373,8 @@
       <workItem from="1719319829285" duration="5816000" />
       <workItem from="1719348161353" duration="2403000" />
       <workItem from="1719471169572" duration="17660000" />
+      <workItem from="1719500641438" duration="18000" />
+      <workItem from="1719585209719" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="[master] initial commit">
       <option name="closed" value="true" />
@@ -503,6 +470,11 @@
           <url>file://$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java</url>
           <line>18</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
