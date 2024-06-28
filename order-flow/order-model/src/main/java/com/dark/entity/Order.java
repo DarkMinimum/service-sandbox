@@ -1,6 +1,7 @@
 package com.dark.entity;
 
 import com.dark.model.OrderStatus;
+
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -9,14 +10,15 @@ import java.util.List;
 @Table(name = "ORDER_TABLE")
 public class Order {
 
-    private static final long serialVersionUID = 1L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
+    private String manualMark;
 
     @ElementCollection
     private List<String> productIds;
@@ -54,12 +56,20 @@ public class Order {
         this.productIds = productIds;
     }
 
+    public String getManualMark() {
+        return manualMark;
+    }
+
+    public void setManualMark(String manualMark) {
+        this.manualMark = manualMark;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
-                "id='" + id + '\'' +
-                ", status='" + status + '\'' +
-                ", productIds=" + productIds +
-                '}';
+            "id='" + id + '\'' +
+            ", status='" + status + '\'' +
+            ", productIds=" + productIds +
+            '}';
     }
 }

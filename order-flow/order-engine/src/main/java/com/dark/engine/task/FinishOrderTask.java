@@ -1,17 +1,16 @@
 package com.dark.engine.task;
 
-import com.dark.engine.ProcessEnv;
-import jakarta.ws.rs.core.UriBuilder;
-import org.apache.commons.lang3.StringUtils;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import com.dark.engine.ProcessEnv;
 
 @Component("FinishOrder")
 public class FinishOrderTask implements JavaDelegate {
@@ -23,19 +22,15 @@ public class FinishOrderTask implements JavaDelegate {
     public void execute(DelegateExecution execution) throws Exception {
         var processEnv = new ProcessEnv(execution);
         var orderId = processEnv.getOrderId();
-
-        URI uriWithParams = UriBuilder.fromUri(endingUrl)
-                .queryParam("orderId", orderId)
-                .build();
+        var manualMark = processEnv.getManualMark();
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(uriWithParams)
-                .POST(HttpRequest.BodyPublishers.ofString(StringUtils.EMPTY))
-                .build();
+            .header("Content-Type", "application/json")
+            .uri(URI.create(endingUrl + "/" + orderId))
+            .POST(HttpRequest.BodyPublishers.ofString(String.format("\"%s\"", manualMark)))
+            .build();
 
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println("finish");
-
+        client.send(request, HttpResponse.BodyHandlers.ofString());
     }
 }

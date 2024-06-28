@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[bp] camunda working prototype added">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/controller/EndingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/controller/EndingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/service/EndingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-ending/src/main/java/com/dark/ending/service/EndingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/ProcessEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/ProcessEnv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/CreateOrderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/CreateOrderTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/FinishOrderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/FinishOrderTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/ValidationTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/ValidationTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/order-process.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-engine/src/main/resources/order-process.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/model/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/model/OrderStatus.java" afterDir="false" />
     </list>
     <list id="7549920d-efe7-4979-b182-abf7a6e8911f" name="do-not-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,35 +118,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
   <component name="ProjectId" id="2afNKfThebl0D6aPfsAjxBviQUv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;business-process&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/CamundaModeler/Camunda Modeler.exe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order-flow" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-engine" />
@@ -175,7 +174,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="EngineApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/EngineApplication.http" requestIdentifier="#1" runType="Run single request">
@@ -190,26 +188,26 @@
     </configuration>
     <configuration name="EngineApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-flow.order-engine.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dark.engine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="EngineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-flow.camunda.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dark.engine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -348,10 +346,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EngineApplication (1)" />
+        <item itemvalue="Docker.order-flow.db: Compose Deployment" />
         <item itemvalue="Docker.order-flow: Compose Deployment" />
         <item itemvalue="Spring Boot.EngineApplication" />
         <item itemvalue="HTTP Request.EngineApplication | #1" />
-        <item itemvalue="Docker.order-flow.db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -472,9 +470,14 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/FinishOrderTask.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/FinishOrderTask.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

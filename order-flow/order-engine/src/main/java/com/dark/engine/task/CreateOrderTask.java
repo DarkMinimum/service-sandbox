@@ -1,15 +1,16 @@
 package com.dark.engine.task;
 
-import com.dark.engine.ProcessEnv;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import com.dark.engine.ProcessEnv;
 
 @Component("CreateOrder")
 public class CreateOrderTask implements JavaDelegate {
@@ -24,12 +25,12 @@ public class CreateOrderTask implements JavaDelegate {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(starterUrl))
-                .POST(HttpRequest.BodyPublishers.ofString(String.format("[\"%s\"]", product)))
-                .build();
+            .uri(URI.create(starterUrl))
+            .POST(HttpRequest.BodyPublishers.ofString(String.format("[\"%s\"]", product)))
+            .header("Content-Type", "application/json")
+            .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         processEnv.setOrderId(response.body());
-        System.out.println("create");
     }
 }

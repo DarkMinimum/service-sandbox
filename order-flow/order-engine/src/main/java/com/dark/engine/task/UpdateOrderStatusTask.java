@@ -1,21 +1,20 @@
 package com.dark.engine.task;
 
-import com.dark.engine.ProcessEnv;
-import com.dark.entity.Order;
-import com.dark.model.OrderStatus;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.ws.rs.core.Link;
-import jakarta.ws.rs.core.UriBuilder;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
 import org.apache.commons.lang3.StringUtils;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import com.dark.engine.ProcessEnv;
+import com.dark.entity.Order;
+import com.dark.model.OrderStatus;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Component("UpdateOrderStatus")
 public class UpdateOrderStatusTask implements JavaDelegate {
@@ -30,9 +29,9 @@ public class UpdateOrderStatusTask implements JavaDelegate {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(intermediateUrl + orderId))
-                .POST(HttpRequest.BodyPublishers.ofString(StringUtils.EMPTY))
-                .build();
+            .uri(URI.create(intermediateUrl + "/" + orderId))
+            .POST(HttpRequest.BodyPublishers.ofString(StringUtils.EMPTY))
+            .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         ObjectMapper objectMapper = new ObjectMapper();
@@ -41,6 +40,5 @@ public class UpdateOrderStatusTask implements JavaDelegate {
         if (order.getStatus().equals(OrderStatus.CLOSED)) {
             throw new IllegalStateException(String.format("Order should have %s status", OrderStatus.CLOSED));
         }
-        System.out.println("update");
     }
 }

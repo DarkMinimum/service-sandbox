@@ -7,6 +7,7 @@ public class ProcessEnv {
     public static final String IS_VALIDATATED = "isValidated";
     public static final String PRODUCT_LIST = "productList";
     public static final String ORDER_ID = "orderId";
+    public static final String MANUAL_MARK = "manualMark";
 
     private VariableScope variableScope;
 
@@ -28,5 +29,9 @@ public class ProcessEnv {
 
     public void setOrderId(String id) {
         variableScope.setVariable(ORDER_ID, id);
+    }
+
+    public String getManualMark() {
+        return variableScope.getVariable(MANUAL_MARK).toString();
     }
 }

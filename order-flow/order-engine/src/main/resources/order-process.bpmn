@@ -38,6 +38,14 @@
       <bpmn:outgoing>Flow_0to8ify</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:userTask id="Activity_04okb4f" name="Process Order Manually" camunda:asyncBefore="true">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="manualMark" label="Manual Mark of the Order" type="string">
+            <camunda:properties />
+            <camunda:validation />
+          </camunda:formField>
+        </camunda:formData>
+      </bpmn:extensionElements>
       <bpmn:incoming>Flow_0to8ify</bpmn:incoming>
       <bpmn:outgoing>Flow_0qrrp53</bpmn:outgoing>
     </bpmn:userTask>
@@ -84,21 +92,18 @@
           <dc:Bounds x="134" y="76" width="71" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1l8g95o_di" bpmnElement="Event_1l8g95o">
+        <dc:Bounds x="1082" y="112" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1063" y="93" width="73" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_19wfokl_di" bpmnElement="ValidateOrderTask">
         <dc:Bounds x="230" y="90" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0tcm0bq_di" bpmnElement="CreateOrderTask">
         <dc:Bounds x="460" y="90" width="100" height="80" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_17x4cpa_di" bpmnElement="Event_094wzza">
-        <dc:Bounds x="592" y="112" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1l8g95o_di" bpmnElement="Event_1l8g95o">
-        <dc:Bounds x="1082" y="112" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1063" y="93" width="73" height="14" />
-        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_01qgls7_di" bpmnElement="UpdateOrderStatusTask">
         <dc:Bounds x="660" y="90" width="100" height="80" />
@@ -121,6 +126,9 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1060" y="306" width="79" height="27" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_17x4cpa_di" bpmnElement="Event_094wzza">
+        <dc:Bounds x="592" y="112" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0hwd2pb_di" bpmnElement="Event_02c1p8t">
         <dc:Bounds x="822" y="152" width="36" height="36" />

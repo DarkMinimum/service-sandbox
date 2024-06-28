@@ -3,6 +3,7 @@ package com.dark.ending.service;
 import com.dark.ending.repo.OrderRepository;
 import com.dark.entity.Order;
 import com.dark.model.OrderStatus;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +13,10 @@ public class EndingService {
     @Autowired
     private OrderRepository repository;
 
-    public Order finishOrder(String id) {
+    public Order finishOrder(String id, String manualMark) {
         var order = repository.getReferenceById(id);
         order.setStatus(OrderStatus.CLOSED);
+        order.setManualMark(manualMark);
         return repository.saveAndFlush(order);
     }
 }
