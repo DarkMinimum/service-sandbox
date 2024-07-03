@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IntermediateController {
 
+    private final IntermediateService service;
+
     @Autowired
-    private IntermediateService service;
+    public IntermediateController(IntermediateService service) {
+        this.service = service;
+    }
 
     @PostMapping("/order/{orderId}")
     public Order shipOrder(@PathVariable String orderId) {

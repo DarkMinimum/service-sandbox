@@ -10,8 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class EndingService {
 
+    private final OrderRepository repository;
+
     @Autowired
-    private OrderRepository repository;
+    public EndingService(OrderRepository repository) {
+        this.repository = repository;
+    }
 
     public Order finishOrder(String id, String manualMark) {
         var order = repository.getReferenceById(id);

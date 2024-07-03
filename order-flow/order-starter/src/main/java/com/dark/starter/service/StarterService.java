@@ -11,8 +11,12 @@ import java.util.List;
 @Service
 public class StarterService {
 
+    private final OrderRepository repository;
+
     @Autowired
-    private OrderRepository repository;
+    public StarterService(OrderRepository repository) {
+        this.repository = repository;
+    }
 
     public Long createOrder(List<String> productIds) {
         var order = new Order();

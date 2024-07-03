@@ -9,8 +9,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class IntermediateService {
 
+    private final OrderRepository repository;
+
     @Autowired
-    private OrderRepository repository;
+    public IntermediateService(OrderRepository repository) {
+        this.repository = repository;
+    }
 
     public Order updateOrderStatus(String id) {
         var order = repository.getReferenceById(id);

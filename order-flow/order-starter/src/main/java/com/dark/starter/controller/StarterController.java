@@ -11,8 +11,12 @@ import java.util.List;
 @RestController
 public class StarterController {
 
+    private final StarterService service;
+
     @Autowired
-    private StarterService service;
+    public StarterController(StarterService service) {
+        this.service = service;
+    }
 
     @PostMapping("/order")
     public Long showMessage(@RequestBody List<String> productIds) {

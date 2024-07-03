@@ -1,5 +1,4 @@
 rootProject.name = 'order-flow'
 
 include 'order-starter', 'order-intermidiate', 'order-ending', 'order-model'
-include 'order-engine'
-
+include 'order-camunda', 'order-temporal'
