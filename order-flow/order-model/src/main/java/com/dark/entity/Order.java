@@ -1,7 +1,7 @@
 package com.dark.entity;
 
 import com.dark.model.OrderStatus;
-
+import com.dark.model.OrderType;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -17,6 +17,10 @@ public class Order {
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
+    @Enumerated(EnumType.STRING)
+    private OrderType type;
+
 
     private String manualMark;
 
@@ -64,12 +68,20 @@ public class Order {
         this.manualMark = manualMark;
     }
 
+    public OrderType getType() {
+        return type;
+    }
+
+    public void setType(OrderType type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
-            "id='" + id + '\'' +
-            ", status='" + status + '\'' +
-            ", productIds=" + productIds +
-            '}';
+                "id='" + id + '\'' +
+                ", status='" + status + '\'' +
+                ", productIds=" + productIds +
+                '}';
     }
 }

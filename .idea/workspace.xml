@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[bp] added some impl to temporal solution x1">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[bp] added some impl to temporal solution x2">
+      <change afterPath="$PROJECT_DIR$/order-flow/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/model/OrderType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/activity/FinishActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/activity/FinishOrderActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/activity/impl/FinishActivityImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/activity/impl/FinishActivityImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/controller/SamplesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/controller/TemporalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/workflow/OrderWorkflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/workflow/OrderWorkflow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/workflow/impl/OrderWorkflowImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/java/com/dark/temporal/workflow/impl/OrderWorkflowImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-camunda/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-camunda/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/service/StarterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/service/StarterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="7549920d-efe7-4979-b182-abf7a6e8911f" name="do-not-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +86,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -98,12 +101,12 @@
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
-        <option name="originalMessage" value="[bp] created templates" />
-        <option name="rewordedMessage" value="[bp] created templates" />
+        <option name="originalMessage" value="[bp] added temporal server with UI" />
+        <option name="rewordedMessage" value="[bp] added temporal service and its workflow" />
       </RewordedCommitMessageMapping>
     </option>
     <option name="currentCommit" value="1" />
-    <option name="onto" value="d7f0d28dedf69ecbb40a13b729be1df1cff4c262" />
+    <option name="onto" value="b1be2f189e700ce42e11bc7e907f0611f578b2e6" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -125,32 +128,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;business-process&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-temporal/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "business-process",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java",
+    "last_opened_file_path": "C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-temporal/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dark.temporal.activity.impl" />
@@ -173,7 +176,7 @@
       <recent name="com.dark.starter.repo" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TemporalApplication">
+  <component name="RunManager" selected="Spring Boot.CamundaApplication">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -605,7 +608,7 @@
       <workItem from="1720100669026" duration="6021000" />
       <workItem from="1720532695123" duration="5765000" />
       <workItem from="1720595239594" duration="331000" />
-      <workItem from="1720595821728" duration="5074000" />
+      <workItem from="1720595821728" duration="10402000" />
     </task>
     <task id="LOCAL-00001" summary="[master] initial commit">
       <option name="closed" value="true" />
@@ -711,7 +714,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720537846423</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[bp] added some impl to temporal solution x2">
+      <option name="closed" value="true" />
+      <created>1720602629051</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720602629051</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,7 +751,8 @@
     <MESSAGE value="[bp] fixed temporal module" />
     <MESSAGE value="[bp] added some impl to temporal solution" />
     <MESSAGE value="[bp] added some impl to temporal solution x1" />
-    <option name="LAST_COMMIT_MESSAGE" value="[bp] added some impl to temporal solution x1" />
+    <MESSAGE value="[bp] added some impl to temporal solution x2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[bp] added some impl to temporal solution x2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -752,7 +764,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java</url>
-          <line>18</line>
+          <line>23</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
