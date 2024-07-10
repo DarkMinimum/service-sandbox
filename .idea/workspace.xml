@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[master] initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/graphQL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/graphQL.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/graphQL.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/java/graph/server/graphql/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/java/graph/server/graphql/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/java/graph/server/graphql/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph-ql/src/main/resources/graphql/schema.graphqls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b971698ffc5bf40a64337294fabc12baaa3777b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/9/b971698ffc5bf40a64337294fabc12baaa3777b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="f7278b34-5d94-407a-a159-119a08be7b78" name="Changes" comment="[bp] added some impl to temporal solution x2">
+      <change afterPath="$PROJECT_DIR$/order-flow/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/model/OrderType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-camunda/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-camunda/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-model/src/main/java/com/dark/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/service/StarterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/service/StarterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-flow/order-temporal/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-flow/order-temporal/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="7549920d-efe7-4979-b182-abf7a6e8911f" name="do-not-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +38,18 @@
     <projectState path="$PROJECT_DIR$/grpc-server/rest-server">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/order-flow">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/order-flow/model">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/order-flow/order-engine">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/order-flow/order-temporal">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/rest-server">
       <ProjectState />
     </projectState>
@@ -53,6 +61,15 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/grpc-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/order-flow">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/order-flow/order-starter">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/order-flow/order-model">
           <activation />
         </task>
         <projects_view>
@@ -67,19 +84,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;DarkMinimum&quot;
-  }
-}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="[bp] added temporal server with UI" />
+        <option name="rewordedMessage" value="[bp] added temporal service and its workflow" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="b1be2f189e700ce42e11bc7e907f0611f578b2e6" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -92,7 +120,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2afNKfThebl0D6aPfsAjxBviQUv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -100,71 +128,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danil/IdeaProjects/g-rpc-repo/graph-ql&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "business-process",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-model/src/main/java",
+    "last_opened_file_path": "C:/Users/danil/IdeaProjects/service-sandbox/order-flow/order-temporal/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dark.temporal.activity.impl" />
+      <recent name="com.dark.temporal.activity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-temporal\src\test\resources" />
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-temporal" />
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-engine" />
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-engine\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\order-temporal" />
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\camunda\src\main\resources" />
+      <recent name="C:\Users\danil\IdeaProjects\service-sandbox\order-flow\model\src\main\java" />
       <recent name="C:\Users\danil\IdeaProjects\g-rpc-repo\grpc-client\src\main\proto" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dark.model" />
+      <recent name="com.dark.starter.repo" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GraphQlApplication">
-    <configuration name="grpc-server [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/grpc-server" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="classes" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+  <component name="RunManager" selected="Spring Boot.CamundaApplication">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="grpc-server [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="grpc-server [test]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/grpc-server" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,11 +227,40 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
+    <configuration name="CamundaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-camunda.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.CamundaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
+    <configuration name="EndingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-ending.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.ending.EndingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EndingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-ending.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.ending.EndingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EngineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-engine.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.engine.EngineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphQlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="graphQL.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="graph.server.graphql.GraphQlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GraphQlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="graphQL.main" />
@@ -217,15 +276,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrpcServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GrpcClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="grpc-client.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="grpc.client.grpcclient.GrpcClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="grpc-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="grpc.server.grpcserver.GrpcServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="grpc.server.grpcserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GrpcServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="grpc-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="grpc.server.grpcserver.GrpcServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntermediateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-intermidiate.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.intermediate.IntermediateApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntermediateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-intermidiate.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.intermediate.IntermediateApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-ending.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-ending.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-intermidiate.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-intermidiate.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-starter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-starter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rest-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.starter.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServerApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rest-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.starter.RestServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,24 +374,212 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rest-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rest.server.restserver.RestServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-sandbox.order-flow.order-starter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.starter.StarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-sandbox.order-flow.order-starter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.starter.StarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-starter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.starter.StarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-starter.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.starter.StarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemporalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-flow.order-temporal.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.temporal.TemporalApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dark.temporal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemporalSpringbootSamplesApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-flow.order-temporal.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dark.temporal.TemporalSpringbootSamplesApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dark.temporal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemporalSpringbootSamplesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-temporal.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.temporal.samples.springboot.TemporalSpringbootSamplesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemporalSpringbootSamplesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-flow.order-temporal.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.temporal.samples.springboot.TemporalSpringbootSamplesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow.temporal-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="temporal-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow.temporal-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="temporal-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow.temporal-ui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="temporal-ui" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow.temporal-ui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="temporal-ui" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow.temporal: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="temporal" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="order-flow.temporal: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="temporal" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="order-flow/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.order-flow.temporal-db: Compose Deployment" />
+      <item itemvalue="Docker.order-flow.temporal-ui: Compose Deployment" />
+      <item itemvalue="Docker.order-flow.temporal: Compose Deployment" />
+      <item itemvalue="Docker.order-flow: Compose Deployment" />
       <item itemvalue="Gradle.grpc-server [test]" />
-      <item itemvalue="Gradle.grpc-server [classes]" />
-      <item itemvalue="Gradle.grpc-server [jar]" />
-      <item itemvalue="HTTP Request.generated-requests | #4" />
-      <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="Spring Boot.EngineApplication" />
+      <item itemvalue="Spring Boot.CamundaApplication" />
+      <item itemvalue="Spring Boot.TemporalSpringbootSamplesApplication" />
+      <item itemvalue="Spring Boot.EndingApplication" />
+      <item itemvalue="Spring Boot.IntermediateApplication" />
+      <item itemvalue="Spring Boot.StarterApplication" />
+      <item itemvalue="Spring Boot.RestServerApplication (1)" />
+      <item itemvalue="Spring Boot.RestServerApplication (2)" />
+      <item itemvalue="Spring Boot.RestServerApplication (3)" />
       <item itemvalue="Spring Boot.GraphQlApplication" />
       <item itemvalue="Spring Boot.RestServerApplication" />
       <item itemvalue="Spring Boot.GrpcClientApplication" />
-      <item itemvalue="Spring Boot.GrpcServerApplication" />
+      <item itemvalue="Spring Boot.RestServerApplication (4)" />
+      <item itemvalue="Spring Boot.GrpcServerApplication (1)" />
+      <item itemvalue="Spring Boot.StarterApplication (1)" />
+      <item itemvalue="Spring Boot.TemporalSpringbootSamplesApplication (1)" />
+      <item itemvalue="Spring Boot.TemporalApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GrpcServerApplication" />
-        <item itemvalue="Gradle.grpc-server [classes]" />
-        <item itemvalue="HTTP Request.generated-requests | #4" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
-        <item itemvalue="Gradle.grpc-server [jar]" />
+        <item itemvalue="Spring Boot.TemporalApplication" />
+        <item itemvalue="Docker.order-flow: Compose Deployment" />
+        <item itemvalue="Docker.order-flow.temporal-ui: Compose Deployment" />
+        <item itemvalue="Docker.order-flow.temporal: Compose Deployment" />
+        <item itemvalue="Docker.order-flow.temporal-db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +596,19 @@
       <workItem from="1704790987516" duration="1940000" />
       <workItem from="1704792944238" duration="6619000" />
       <workItem from="1704815453366" duration="2110000" />
+      <workItem from="1719316340132" duration="128000" />
+      <workItem from="1719316480036" duration="3332000" />
+      <workItem from="1719319829285" duration="5816000" />
+      <workItem from="1719348161353" duration="2403000" />
+      <workItem from="1719471169572" duration="17660000" />
+      <workItem from="1719500641438" duration="18000" />
+      <workItem from="1719585209719" duration="1374000" />
+      <workItem from="1719991832934" duration="7489000" />
+      <workItem from="1720020104835" duration="692000" />
+      <workItem from="1720100669026" duration="6021000" />
+      <workItem from="1720532695123" duration="5765000" />
+      <workItem from="1720595239594" duration="331000" />
+      <workItem from="1720595821728" duration="10402000" />
     </task>
     <task id="LOCAL-00001" summary="[master] initial commit">
       <option name="closed" value="true" />
@@ -288,15 +626,133 @@
       <option name="project" value="LOCAL" />
       <updated>1704801482327</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[bp] created templates">
+      <option name="closed" value="true" />
+      <created>1719318190522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719318190522</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[bp] created templates 1">
+      <option name="closed" value="true" />
+      <created>1719318211378</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719318211378</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[bp] created templates 2">
+      <option name="closed" value="true" />
+      <created>1719320442151</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719320442151</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[bp] add basic order infrastructure">
+      <option name="closed" value="true" />
+      <created>1719415032025</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719415032025</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[bp] camunda working prototype added">
+      <option name="closed" value="true" />
+      <created>1719418904806</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719418904806</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[bp] added temporal server with UI">
+      <option name="closed" value="true" />
+      <created>1720008768312</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720008768312</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[bp] added and renamed modules">
+      <option name="closed" value="true" />
+      <created>1720017660483</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720017660483</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[bp] added and renamed modules">
+      <option name="closed" value="true" />
+      <created>1720100908776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720100908776</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[bp] fixed temporal module">
+      <option name="closed" value="true" />
+      <created>1720106210750</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720106210750</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[bp] added some impl to temporal solution">
+      <option name="closed" value="true" />
+      <created>1720537428842</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720537428842</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[bp] added some impl to temporal solution x1">
+      <option name="closed" value="true" />
+      <created>1720537846423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720537846423</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[bp] added some impl to temporal solution x2">
+      <option name="closed" value="true" />
+      <created>1720602629051</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720602629051</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[master] initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="[master] initial commit" />
+    <MESSAGE value="[bp] created templates" />
+    <MESSAGE value="[bp] created templates 1" />
+    <MESSAGE value="[bp] created templates 2" />
+    <MESSAGE value="[bp] add basic order infrastructure" />
+    <MESSAGE value="[bp] camunda working prototype added" />
+    <MESSAGE value="[bp] added temporal server with UI" />
+    <MESSAGE value="[bp] added and renamed modules" />
+    <MESSAGE value="[bp] fixed temporal module" />
+    <MESSAGE value="[bp] added some impl to temporal solution" />
+    <MESSAGE value="[bp] added some impl to temporal solution x1" />
+    <MESSAGE value="[bp] added some impl to temporal solution x2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[bp] added some impl to temporal solution x2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -306,7 +762,21 @@
           <line>19</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-flow/order-starter/src/main/java/com/dark/starter/controller/StarterController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-flow/order-engine/src/main/java/com/dark/engine/task/UpdateOrderStatusTask.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

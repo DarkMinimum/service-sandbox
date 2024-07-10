@@ -20,6 +20,20 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/order-flow" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/order-flow" />
+            <option value="$PROJECT_DIR$/order-flow/order-camunda" />
+            <option value="$PROJECT_DIR$/order-flow/order-ending" />
+            <option value="$PROJECT_DIR$/order-flow/order-intermidiate" />
+            <option value="$PROJECT_DIR$/order-flow/order-model" />
+            <option value="$PROJECT_DIR$/order-flow/order-starter" />
+            <option value="$PROJECT_DIR$/order-flow/order-temporal" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/rest-server" />
         <option name="modules">
           <set>

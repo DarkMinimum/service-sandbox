@@ -5,6 +5,7 @@
       <module name="grpc-client" target="17" />
       <module name="grpc-client.main" target="17" />
       <module name="grpc-client.test" target="17" />
+      <module name="order-engine" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
